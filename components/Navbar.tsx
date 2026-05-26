@@ -41,12 +41,12 @@ export default function Navbar() {
         </Link>
 
         {/* Desktop nav links */}
-        <nav className="hidden md:flex items-center gap-9">
+        <nav className="hidden md:flex items-center gap-6">
           {NAV_LINKS.map(({ label, href }) => (
             <Link
               key={href}
               href={href}
-              className={`text-xl font-semibold transition-colors ${
+              className={`text-sm font-semibold transition-colors ${
                 pathname === href
                   ? "text-brand-amber"
                   : "text-gray-600 hover:text-brand-navy"
@@ -58,16 +58,16 @@ export default function Navbar() {
         </nav>
 
         {/* Desktop CTAs */}
-        <div className="hidden md:flex items-center gap-4">
+        <div className="hidden md:flex items-center gap-3">
           <Link
             href="/signin"
-            className="text-xl font-semibold text-brand-navy border-2 border-brand-navy px-7 py-3 rounded-full hover:bg-brand-navy hover:text-white transition-colors"
+            className="text-sm font-semibold text-brand-navy border-2 border-brand-navy px-5 py-2 rounded-full hover:bg-brand-navy hover:text-white transition-colors"
           >
             Sign In
           </Link>
           <Link
             href="/create"
-            className="text-xl font-semibold text-white bg-brand-amber px-7 py-3 rounded-full hover:bg-brand-amber-hover transition-colors shadow-sm"
+            className="text-sm font-semibold text-white bg-brand-amber px-5 py-2 rounded-full hover:bg-brand-amber-hover transition-colors shadow-sm"
           >
             Create
           </Link>

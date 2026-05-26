@@ -78,7 +78,7 @@ export default function HeroBanner() {
       <div className="absolute inset-0 bg-brand-navy/65" />
 
       {/* Content — sits over the image, pushed down by navbar height */}
-      <div className="absolute inset-0 pt-32 flex items-center">
+      <div className="absolute inset-0 pt-[6.5rem] flex items-center">
         <div className="max-w-6xl mx-auto px-6 py-10 grid md:grid-cols-2 gap-14 items-center w-full">
           {/* ── Left: copy ── */}
           <div>

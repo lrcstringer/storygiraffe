@@ -36,7 +36,7 @@ export default function Navbar() {
           <img
             src="/logo.png"
             alt="StoryGiraffe"
-            className="h-28 w-auto"
+            className="h-[5.25rem] w-auto"
           />
         </Link>
 
